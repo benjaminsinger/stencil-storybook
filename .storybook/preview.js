@@ -1,6 +1,9 @@
-import {defineCustomElements} from '../loader';
+// https://stackoverflow.com/questions/71329335/how-to-setup-storybook-with-tailwindcss-reactjs-and-typescript
+// https://www.youtube.com/watch?v=KyephjW1irE
+
 import '!style-loader!css-loader!postcss-loader!tailwindcss/tailwind.css';
 import 'tailwindcss/tailwind.css';
+import { defineCustomElements } from '../loader';
 
 defineCustomElements();
 

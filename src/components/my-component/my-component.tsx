@@ -1,12 +1,19 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
+interface MyComponentI {
+  first: string;
+  middle: string;
+  last: string;
+  appearance: string;
+}
+
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
   shadow: true,
 })
-export class MyComponent {
+export class MyComponent implements MyComponentI {
   /**
    * The first name
    */
@@ -22,11 +29,16 @@ export class MyComponent {
    */
   @Prop() last: string;
 
+  /**
+   * The class
+   */
+   @Prop() appearance: string;
+
   private getText(): string {
     return format(this.first, this.middle, this.last);
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div class={this.appearance}>Hello, World! I'm {this.getText()}</div>;
   }
 }
