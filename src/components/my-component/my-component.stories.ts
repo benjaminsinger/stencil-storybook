@@ -4,8 +4,8 @@ export default {
   title: 'Components/MyComponent',
   argTypes: {
     appearance: {
-      // options: ['base', 'primary', 'secondary', 'warning', 'danger', 'bg-green-500', 'bg-red-500'],
-      control: { type: 'text' }, // Automatically inferred when 'options' is defined
+      options: ['base', 'primary', 'secondary', 'warning', 'danger', 'bg-primary', 'bg-secondary', 'bg-tertiary'],
+      control: { type: 'select' }, // Automatically inferred when 'options' is defined
     }
   }
 }

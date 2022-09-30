@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@benjaminsinger/sds-tailwind-config": "github:benjaminsinger/sds-tailwind-config",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",

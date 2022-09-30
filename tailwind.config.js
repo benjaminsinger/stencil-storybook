@@ -1,4 +1,8 @@
+// https://stackoverflow.com/questions/68020712/tailwind-css-classes-not-showing-in-storybook-build/71877841#71877841
+
 /** @type {import('tailwindcss').Config} */
+const { base } = require('@benjaminsinger/sds-tailwind-config');
+
 module.exports = {
   safelist: [
     {
@@ -13,4 +17,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  presets: [base]
 }
