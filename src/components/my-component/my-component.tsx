@@ -39,6 +39,6 @@ export class MyComponent implements MyComponentI {
   }
 
   render() {
-    return <div class={this.appearance}>Hello, World! I'm {this.getText()}</div>;
+    return <div class={`bg-primary ${this.appearance}`}>Hello, World! I'm {this.getText()}</div>;
   }
 }
